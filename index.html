@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body>
+    
+    <div class="tabs">
+        <button id="defaultOpen" class="tablinks active" onclick="openSection(event, 'Inicio')">Inicio</button>
+        <button id="defaultOpen" class="tablinks" onclick="openSection(event, 'sobre_mi')">Sobre mí</button>
+        <button id="defaultOpen" class="tablinks" onclick="openSection(event, 'hoja_de_vida')">Hoja de vida</button>
+        <button id="defaultOpen" class="tablinks" onclick="openSection(event, 'certificados')">Certificados</button>
+    </div>
+    
+    <div id="Inicio" class="tabcontent">
+        <div class="inicio-container">
+            <div class="image">
+                <img src="./imagenes/inicio.png" alt="inicio" class="image-with-shadow">
+            </div>
+            <div class="text">
+                <h1>Hola, mi nombre es David Aite y soy <span class="bold">Ingeniero en sistemas</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobre_mi" class="tabcontent">
+        <div class="sobre-mi-container">
+            <div class="imagen">
+                <img src="./imagenes/collage.jpg" alt="collage" class="image-with-shadow">
+            </div>
+            <div class="text-sobremi">
+                <h1>¡Me alegra que estés aquí!</h1>
+                <p>Me presento. Mucho gusto, mi nombre es David y tengo 21 años, soy de la hermosa ciudad de Pasto Nariño, de Colombia. Vivo en cartagena hace 4 años, desde que inicie mi carrera estoy seguro que soy una persona única y capaz de todo lo que me proponga. En mis tiempos libres me gusta programar y pensar en diferentes proyectos que puedan innovar y revolucionar el mundo.</p>
+                <p>Me caracterizo por mi motivación y capacidad para hacer o aprender aptitudes que mejoren la vida de las personas. <span class="bold">¡Qué esperas para trabajar juntos!</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="hoja_de_vida" class="tabcontent">
+        <div class="hoja-de-vida-container">
+            <div class="imagen-descarga">
+                <img src="./imagenes/descarga.png" alt="descarga" class="image-with-shake">
+            </div>
+            <div class="button">
+                <a href="./Documentos/Hoja de vida David Aite.pdf" download="hoja_de_vida.pdf">Descargar Hoja de Vida</a>
+            </div>
+        </div>
+    </div>
+
+   <div id="certificados" class="tabcontent">
+    <div class="certificados-container">
+        <div class="imagen-certificados">
+            <img src="./imagenes/css.png" alt="CSS3" class="certificados-i">
+            <div class="button">
+                <a href="./Documentos/diploma CSS.pdf" download="certificado_css3.pdf">Descargar CSS3</a>
+            </div>
+        </div>
+        <div class="imagen-certificados">
+            <img src="imagenes/html.png" alt="HTML" class="certificados-i">
+            <div class="button">
+                <a href="./Documentos/diploma HTML.pdf" download="certificado_html.pdf">Descargar HTML</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

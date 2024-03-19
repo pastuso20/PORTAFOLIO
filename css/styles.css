@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../imagenes/fon.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    color: #fff;
+}
+
+.tabs {
+    max-width: 30%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que las pestañas se envuelvan */
+    background-color: rgba(21, 51, 30, 0.5); /* Green Hunter con transparencia */
+    border-radius: 6px; 
+}
+
+.tablinks {
+    background-color: transparent;
+    color: #fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.tablinks:hover {
+    background-color:#4d694b; /* Darker Green Hunter */
+}
+
+.tablinks.active {
+    background-color: #4d694b; /* Darker Green Hunter */
+}
+
+
+.tabcontent.stalinist-one-regular {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    font-family: "Stalinist One", sans-serif;
+}
+
+.tabcontent h2 {
+    color: #126316; /* Green Hunter */
+}
+
+.tabcontent p {
+    color: #fff;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    
+}
+
+.image {
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    display: flex; /* Usar flexbox para centrar verticalmente la imagen */
+    justify-content: center; /* Centrar verticalmente la imagen */
+}
+
+.text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.image-with-shadow {
+    animation: fadeIn 3s ease-out; /* Aplica la animación fadeIn */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Empieza con opacidad 0 (invisible) */
+    }
+    to {
+        opacity: 1; /* Termina con opacidad 1 (visible) */
+    }
+}
+
+/* Define la animación de aparición de las letras */
+@keyframes fadeInLetters {
+    from {
+        opacity: 0; /* Empieza con opacidad 0 (invisible) */
+        transform: translateY(20px); /* Empieza 20px más abajo */
+    }
+    to {
+        opacity: 1; /* Termina con opacidad 1 (visible) */
+        transform: translateY(0); /* Termina en su posición original */
+    }
+}
+
+.text h1 {
+    margin-top: 20px; /* Espacio entre la imagen y el texto */
+    animation: fadeInLetters 3s ease forwards; /* Aplica la animación a las letras */
+    opacity: 0; /* Hace que el texto comience invisible para la animación */
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; } /* Inicio de la animación */
+    100% { background-position: 100% 0; } /* Fin de la animación */
+}
+
+.bold {
+    animation: highlight 2s infinite alternate; /* Aplica la animación de brillo */
+    background: linear-gradient(to right, #4d694b,#126316); /* Fondo degradado verde oscuro */
+    color: #fff; /* Color del texto en blanco para mejor contraste */
+    padding: 2px 5px; /* Añade un poco de espacio alrededor del texto */
+    background-size: 200% auto; /* Ajusta el tamaño del fondo para el desplazamiento */
+    animation: moveBackground 25s linear infinite; /* Aplica la animación de desplazamiento */
+}
+
+@keyframes highlight {
+    from {
+        background-color: #004d00; /* Color de fondo más oscuro */
+    }
+    to {
+        background-color: #007f00; /* Color de fondo más claro */
+    }
+}
+
+.sobre-mi-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport */
+}
+
+.imagen {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 300px;
+    animation: sway 3s infinite alternate; /* Aplica la animación de balanceo */
+}
+
+
+.text-sobremi {
+    
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 50%; /* Establece un ancho máximo para el texto */
+    margin-left: 20px;
+}
+
+.image-with-shadow {
+    border: 2px dotted #000; /* Color y grosor del borde */
+    border-radius: 5px;
+    padding: 5px; /* Espacio entre el borde y la imagen */
+    max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+@keyframes sway {
+    from {
+        transform: rotate(2deg);
+    }
+    to {
+        transform: rotate(-2deg);
+    }
+}
+
+.hoja-de-vida-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.image-with-shake {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: 250px; 
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.button {
+    margin-top: 20px; /* Espacio entre la imagen y el botón */
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #004d00; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button a:hover {
+    background-color: #4d694b; /* Color de fondo del botón al pasar el ratón */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.image-with-shake {
+    animation: shake 0.5s ease-in-out infinite; /* Aplica la animación de shake */
+}
+
+.certificados-container {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
+    height: 100%; /* Ajusta la altura del contenedor */
+}
+
+.imagen-certificados {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.certificados-i {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: 150px; /* Tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+
+
+
+
+
+
+
